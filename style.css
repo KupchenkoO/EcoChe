@@ -12,7 +12,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+  
 }
 
 /* CONTAINER  
@@ -38,6 +38,8 @@ justify-content: space-between;
 padding: 35px 0;
 border-bottom: 1px solid #515369;
 align-items: center;
+
+
 }
 .header__logo {
     
@@ -50,7 +52,7 @@ align-items: center;
 font-size: 13px;
 font-weight: 700;
 text-transform: uppercase;
-te }
+ }
 
  .nav__link {
      margin-left: 50px;
@@ -97,9 +99,9 @@ margin-left: 0;
     font-family: 'Raleway', sans-serif;
     display: inline-block !important;
     text-decoration: none !important;
-    background-color: #eb4545 !important;
-    color: #000000 !important;
-    border: 3px solid #ffffff !important;
+    background-color: #ededed !important;
+    color: #ffffff !important;
+    border: 3px solid #d1d1d1 !important;
     border-radius: 5px !important;
     font-size: 16px !important;
     padding: 15px 50px !important; 
@@ -110,9 +112,9 @@ margin-left: 0;
 
  .button__f{
     text-decoration: none !important; 
-    background-color: #e71818 !important;
+    background-color: #ffffff !important;
     color: #000000 !important;
-    border-color: #ff4747 !important;
+    border-color: #ffffff !important;
  }
  /* Новости 
  =======================*/
@@ -121,11 +123,12 @@ margin-left: 0;
      display: flex;
      flex-wrap: wrap;
      margin: 100px 0 ;
+     justify-content: center;
  }
  .news__items {
-     width: 29.33333%;
+    width: calc(100% / 4);
      text-align: center;
-    
+     justify-content: center;
      margin: 25px 0;
      background: #fff;
      padding: 6px 9px;
@@ -166,3 +169,140 @@ height:auto;
     color: #000000 !important;
     border-color: #292929 !important;
  }
+
+
+
+ /* Coments 
+ =======================*/
+ .coments {
+    overflow: hidden;
+ }
+ .coments__item {
+     display: flex;
+     flex-wrap: wrap;
+     text-align: center;
+     justify-content: center;
+     margin: 25px 0;
+     background: #fff;
+     padding: 6px 9px;
+     box-shadow: 0px 8px 20px #c4c4c4;
+     margin: 29px 19px 5 5px;
+     border-bottom: 1px solid #eee;
+     border-radius: 5px;
+
+ }
+ .coments__photo {
+    width: 40%;
+    height: 500px;
+    position: relative;
+ }
+ .coments__img {
+      position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+
+    transform: translateY(-50%);
+ }
+ .coments__content {
+    width: 50%;
+  
+    display: flex;
+ }
+ .coments__text{
+     font-family: 'Raleway', sans-serif;
+     font-size: 36px;
+     line-height: 1.2;
+     padding-left: 85px;
+     margin: 0 3;
+ }
+ 
+ /* Download
+===================*/
+
+.download {
+    margin: 90px 0;
+
+    text-align: center;
+}
+
+.download__title {
+    margin-bottom: 10px;
+
+    font-size: 28px;
+    color: #2d3033;
+    font-weight: 300;
+}
+
+.download__text {
+    margin-bottom: 30px;
+
+    font-size: 13px;
+    color: #2d3033;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/* Footer
+===================*/
+
+.footer {
+    background-color: #4e4e54;
+}
+
+.footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 70px 0;
+}
+
+.footer__block {
+    width: 33.33333%;
+    padding: 0px;
+
+    text-align: center;
+}
+
+.footer__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.footer__address {
+    font-size: 14px;
+    line-height: 1.5;
+    font-style: normal;
+    color: rgba(255, 255, 255, .5);
+}
+
+.footer__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .5);
+}
+
+
+
+/* Copyright
+===================*/
+
+.copyright {
+    padding: 20px 0;
+
+    background-color: #2e2f31;
+}
+
+.copyright__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #808080;
+}
+
+.copyright__text span {
+    color: #fff;
+}
+
